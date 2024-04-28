@@ -1,0 +1,139 @@
+.filter-container {
+    display: flex;
+    justify-content: start;
+
+    .inputFilds {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: .7rem;
+
+        /* General styling for the select dropdown */
+.inputFild {
+    width: 100%; /* Makes the select box take the full width of its container */
+    padding: 8px 12px; /* Adds some padding inside the select box */
+    border: 2px solid #0056b3; /* Adds a solid border with a blue color */
+    border-radius: 8px; /* Rounds the borders for a smoother look */
+    background-color: white; /* Sets a white background color */
+    color: #333; /* Sets the text color to dark grey */
+    font-size: 16px; /* Sets the font size */
+    cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+    appearance: none; /* Removes default system styling */
+    -moz-appearance: none; /* Removes default styling for Firefox */
+    -webkit-appearance: none; /* Removes default styling for Chrome and Safari */
+    outline: none; /* Removes the highlight border that appears on click */
+}
+
+/* Styling for the select dropdown when it is open/focused */
+.inputFild:focus {
+    border-color: #004494; /* Darkens the border color slightly when focused */
+    box-shadow: 0 0 8px rgba(0, 69, 180, 0.25); /* Adds a subtle blue glow */
+}
+
+/* General styling for the option elements */
+.label {
+    padding: 8px; /* Adds padding to make the options easier to read */
+    background-color: #f7f7f7; /* Light grey background for the options */
+    color: #333; /* Text color for options */
+}
+
+/* Adds a hover effect to the options */
+.label:hover {
+    background-color: #e1e1e1; /* Darker grey background on hover */
+}
+
+/* Style to make the dropdown arrow look custom (optional) */
+.inputFild {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Positions the arrow to the right, centered vertically */
+    background-size: 16px; /* Sets a specific size for the arrow */
+}
+
+
+    }
+}
+
+/* This can be added to your main CSS file or a specific component's CSS */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* or adjust the height as needed to fit your design */
+  width: 100%;
+}
+
+
+
+
+
+.table-container {
+    width: 100%;
+    height: 80vh; /* Constrained height to enable scrolling */
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    border-radius: 0.8rem;
+    overflow: auto; /* This is critical for sticky to work */
+}
+  
+
+  .table-container::-webkit-scrollbar {
+      width: 0.5rem;
+      height: 0.5rem;
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: var(--primaryColor);
+ }
+
+
+ table {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* This makes the table fill the container */
+  width: 100%;
+  border-collapse: separate; /* This is necessary for border-spacing to work */
+    border-spacing: 10px; /* Adjust the spacing as needed */
+    width: 100%; /* Full width of its parent container */
+}
+  
+  thead {
+    flex-shrink: 0; /* Prevents the header from shrinking */
+    background-color: var(--primaryColor); 
+    color: #ffffff; /* White text color for the header row */ 
+  }
+
+  tbody {
+    flex-grow: 1; /* Allows the body to grow and fill the space */
+    overflow-y: auto; /* Allows scrolling within the tbody only */
+}
+
+  tfoot {
+    background-color: var(--primaryColor); /* Ensures text is visible against potentially overlapping rows */
+    color: #ffffff;
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+  }
+  
+
+  
+  th, td {
+    padding: 8px; /* Padding inside each table cell */
+    text-align: left; /* Aligns text to the left in each cell */
+    border-bottom: 1px solid #ddd; /* Adds a border below each row for separation */
+  }
+  
+  th {
+    height: 40px; /* Sets a fixed height for header cells */
+  }
+  
+  td {
+    height: 30px; /* Sets a fixed height for data cells */
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1; /* Adds a light grey background on row hover for better readability */
+  }
+  
